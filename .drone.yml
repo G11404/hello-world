@@ -11,7 +11,8 @@ steps:
   image: redis
   pull: if-not-exists
   commands:
-  - sleep 5
+  - sleep 10
   - redis-cli -h redis ping
   - redis-cli -h redis set FOO bar
   - redis-cli -h redis get FOO
+
